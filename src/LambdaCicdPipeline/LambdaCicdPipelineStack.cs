@@ -44,7 +44,7 @@ namespace LambdaCicdPipeline
                 FunctionName = "Finance-Data-Func",
                 Runtime = Runtime.PYTHON_3_9,
                 Handler = "lambda_function.lambda_handler",
-                Code = Code.FromAsset("src/LambdaFunction/FinanceData/Code"),
+                Code = Code.FromAsset("src/LambdaFunction/Code"),
                 Role = lambdaRole,
                 Layers = new[] { lambdaLayer }
             });
